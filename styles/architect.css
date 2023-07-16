@@ -142,7 +142,7 @@ main{
     }
     .teams-container{
         flex-direction: column;
-        padding: 25px;
+        padding: 10px;
         padding-right: 130px;
     }
 
@@ -160,8 +160,16 @@ main{
     header{
         padding: 50px;
     }
-    nav, .teams-container{
+    nav{
         flex-direction: column;
         gap: 20px;
     }
+    .teams-container{
+        flex-direction: column;
+        padding: 25px;
+        padding-right: 130px;
+    }
+    .teams-img-container{
+        flex-direction: column;
+        padding-bottom: 40px;}
 }
