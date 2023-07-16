@@ -321,6 +321,16 @@ main {
     .sponsor-img-container img {
         width: 165px;
     }
+    .features-container{
+        flex-direction: column;
+    }
+    .features-img img{
+        width: 90%;
+        margin-left: 0;
+    }
+    .ten-year-badge{
+        max-width: 300px;
+    }
 }
 
 
@@ -362,5 +372,8 @@ main {
 
     .sponsor-img-container img {
         width: 165px;
+    }
+    .features-container{
+        flex-direction: column;
     }
 }
