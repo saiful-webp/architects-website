@@ -6,7 +6,7 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-.btn-primary{
+.btn-primary {
     border-radius: 8px;
     background: #FF900E;
     padding: 20px 25px;
@@ -19,56 +19,95 @@
     margin-bottom: 35px;
     text-align: center;
 }
+
 /* header style */
-header{
+header {
     background: rgba(255, 144, 14, 0.10);
-    padding: 30px 100px 125px 100px;
+    padding: 30px 100px;
 }
-nav{
+
+nav {
     display: flex;
     margin-bottom: 70px;
     justify-content: space-between;
     align-items: center;
-    
+
 }
-.nav-tittle{
-    font-size: 2.5rem;
-    /* font-weight: 700px; */
+
+.nav-tittle {
+    font-size: 2.2rem;
+    font-weight: 700px;
     color: #131313;
 }
-nav > ul{
+
+nav > ul {
     display: flex;
 
 }
-nav li{
+
+nav li {
     list-style: none;
     margin-right: 25px;
     font-weight: 500px;
     font-size: 1rem;
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
     color: #424242;
     font-size: 1.2rem;
 }
 
 /* banner styles */
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
-.banner-tittle{
 
-    font-size: 3.3rem;
+.banner-tittle {
+
+    font-size: 4rem;
     font-weight: 700px;
     color: #131313;
     padding: 25px;
     margin-bottom: 10px;
 }
-.banner-description{
+
+.banner-description {
     color: #727272;
 }
+
 .banner img {
     width: 100%;
-  }
+}
+
+
+
+
+/* responsive media queries */
+
+/* Mobile Devices responsive */
+
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+
+/* tablet and medium devices responsive */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
