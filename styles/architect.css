@@ -40,7 +40,7 @@ nav {
     color: #131313;
 }
 
-nav > ul {
+nav>ul {
     display: flex;
 
 }
@@ -83,48 +83,122 @@ nav li a {
 }
 
 /* teams section */
-main{
+main {
     max-width: 1440px;
     margin: 0px auto;
 }
-.teams-container{
+
+.teams-container {
     display: flex;
     align-items: center;
 }
-.teams-img-container{
+
+.teams-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     padding-left: 100px;
     padding-top: 100px;
 }
+
 .teams-img-container img {
-    width: 270px;}
-.teams-contant{
+    width: 270px;
+}
+
+.teams-contant {
     padding-right: 70px;
     padding-left: 50px;
 }
-.teams-tittle{
-    font-size: 2.5rem ;
+
+.teams-tittle {
+    font-size: 2.5rem;
 }
-.teams-tittle .quick-list{
+
+.teams-tittle .quick-list {
     color: #727272;
     font-weight: 500;
 }
-.teams-tittle .of-our{
+
+.teams-tittle .of-our {
     font-weight: 700px;
 }
-.teams-tittle .text-features{
+
+.teams-tittle .text-features {
     color: #FF900E;
     font-weight: 700
 }
-.teams-description{
+
+.teams-description {
     color: #727272;
     padding-top: 25px;
     padding-bottom: 10px;
 
 }
 
+/* facts section */
+
+.facts-tittle {
+    font-size: 2.2rem;
+    font-weight: 700px;
+    color: #131313;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.facts-description {
+    color: #727272;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+.facts-card-container {
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.facts-card-container .card-stats {
+    /* font-size: 45px; */
+    color: #424242;
+}
+
+.facts-card-container .card-tittle {
+    font-weight: 600;
+    color: #727272;
+}
+
+/* sponsor section */
+.sponsor-container {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.sponsor-tittle {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 80px;
+}
+
+.sponsor-description {
+    margin-top: 15px;
+    font-size: 16px
+}
+
+.sponsor-img-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 
 
@@ -133,23 +207,46 @@ main{
 /* Mobile Devices responsive */
 
 @media screen and (max-width: 576px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
         gap: 15px;
     }
-    .teams-container{
+
+    .teams-container {
         flex-direction: column;
         padding: 10px;
         padding-right: 130px;
     }
 
-    .teams-img-container{
+    .teams-img-container {
         grid-template-columns: 1fr;
         flex-direction: column;
         padding-bottom: 40px;
+    }
+
+    .facts-tittle,
+    .facts-description {
+        padding-left: 60px;
+    }
+
+    .facts-card-container {
+        flex-direction: column;
+        padding-left: 110px;
+        padding-right: 110px;
+        gap: 50px;
+    }
+
+    .sponsor-img-container {
+        flex-direction: column;
+        gap: 40px;
+
+    }
+    .sponsor-img-container img{
+        width: 165px;
     }
 }
 
@@ -157,19 +254,38 @@ main{
 
 /* tablet and medium devices responsive */
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    header{
+    header {
         padding: 50px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
         gap: 20px;
     }
-    .teams-container{
+
+    .teams-container {
         flex-direction: column;
         padding: 25px;
         padding-right: 130px;
     }
-    .teams-img-container{
+
+    .teams-img-container {
         flex-direction: column;
-        padding-bottom: 40px;}
+        padding-bottom: 40px;
+    }
+
+    .facts-card-container {
+        flex-direction: column;
+        gap: 50px;
+        padding-left: 210px;
+        padding-right: 210px;
+    }
+    .sponsor-img-container {
+        flex-direction: column;
+        gap: 40px;
+
+    }
+    .sponsor-img-container img{
+        width: 165px;
+    }
 }
