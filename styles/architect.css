@@ -111,6 +111,9 @@ main{
     color: #727272;
     font-weight: 500;
 }
+.teams-tittle .of-our{
+    font-weight: 700px;
+}
 .teams-tittle .text-features{
     color: #FF900E;
     font-weight: 700
@@ -137,6 +140,17 @@ main{
         flex-direction: column;
         gap: 15px;
     }
+    .teams-container{
+        flex-direction: column;
+        padding: 25px;
+        padding-right: 130px;
+    }
+
+    .teams-img-container{
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
 }
 
 
@@ -146,7 +160,7 @@ main{
     header{
         padding: 50px;
     }
-    nav{
+    nav, .teams-container{
         flex-direction: column;
         gap: 20px;
     }
